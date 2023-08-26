@@ -38,6 +38,8 @@ I recommend this one because it has an external power connector and you can use 
 **ATX PSU**：
   - Modular/Rated Power 500W+(Because I used some high-powered graphics cards)
 
+**Do not use cell phone chargers or direct USB/USBC power, they are undervoltage. Please use 5V3A/5V4A power adapter**
+
 **Raspberry Pi OS Image**:
   -Kernel 5.1 - [2022-01-28-raspios-bullseye-arm64-full.zip](http://downloads.raspberrypi.org/raspios_full_arm64/images/raspios_full_arm64-2022-01-28/)
   -Or Kernel 6.1 - newest RPI OS Img,download from [official download page](https://www.raspberrypi.com/software/operating-systems/)
