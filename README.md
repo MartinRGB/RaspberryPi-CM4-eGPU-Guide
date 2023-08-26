@@ -3,6 +3,37 @@
 
 If you want to get more information, I suggest you browse [aspberry-pi-pcie-devices](https://github.com/geerlingguy/raspberry-pi-pcie-devices) and its issue.
 
+## My use case and hardware used
+
+**Use cases**
+
+| CM4 IO Board(Official) | CM4-IO-BASE-A(Waveshare) | 
+|     :---:    |     :---:     | 
+| <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/UseCases/img_0.jpg" width="50%" height="50%">  | <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/UseCases/img_3.jpg" width="50%" height="50%">     |
+
+**Hardware:**
+
+| Item | Image | 
+|------------- | ------------- |
+| Raspberry Pi - Compute Module 4 | <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/Hardware/CM4.png" width="25%" height="25%">     | 
+| Raspberry Pi - Compute Module 4 IO Board | <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/Hardware/CM4IOBoard.png" width="25%" height="25%">     | 
+| Waveshare - CM4-IO-BASE-A| <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/Hardware/CM4-IO-BASE-A.png" width="25%" height="25%">      | 
+| ADT-Link - PCI-E x1 to PCI-E 16x riser| <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/Hardware/PCIE1Riser.png" width="25%" height="25%">      | 
+| ADT-Link - M.2 to PCI-E 16x riser| <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/Hardware/M2Riser.png" width="25%" height="25%">      | 
+| GreatWall - GamingPower G5 550w| <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/Hardware/PSU.png" width="25%" height="25%">      | 
+
+**GPU Details:**
+
+|Front| IO| Top |
+| -------------| ------------- | ------------- |
+|![HD 6870](https://tpucdn.com/gpu-specs/images/c/256-front.small.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-top.jpg)  |
+
+**Video**
+
+[Test video 1](https://twitter.com/qiuyinsen/status/1694374834078146962)
+
+[Test video 2](https://twitter.com/qiuyinsen/status/1693954960889720850)
+
 ## Foreword
 
 Please back up your data before building. There is no guarantee that some tools will still work after installing the kernel patch, so it is recommended that you install the tools before installing the patch.
