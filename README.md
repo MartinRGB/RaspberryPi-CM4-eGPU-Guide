@@ -95,7 +95,7 @@ While you are compiling your code, you can install the image(See Part II).
 
 ## II.Install Image & Edit the boot config
 
-#### 1.install `2022-01-28-raspios-bullseye-arm64-full.zip` from [here](http://downloads.raspberrypi.org/raspios_full_arm64/images/raspios_full_arm64-2022-01-28/)
+#### 1.install RPI OS img
 
 #### 2.backup the boot drive & edit config in `/boot`.
 
@@ -117,7 +117,6 @@ disconnect the USB slave port connection & power, then remove the eMMC Boot disa
 ## III.Init the OS
 
 #### 1.tool preparation and SSH login
-P.S. my Dell 2715Q is not competible with this raspios version
 
 first you need enable `SSH` in `Preferences` > `Raspberry Pi Configuration` > `Interface` on Raspberry Pi
 
@@ -156,6 +155,7 @@ sudo apt install -y firmware-amd-graphics
 #### 3.install neofetch
 
 ```
+# iptables for v2rayA,Since I'm in China, I need v2ray service to download some packages.
 sudo apt-get install iptables neofetch
 ```
 #### 4.install v2rayA(optional)
@@ -179,7 +179,7 @@ sudo systemctl enable v2raya.service
 ```
 sudo nano /etc/modprobe.d/blacklist-radeon.conf
 
-#content is: 
+# content is: 
 blacklist radeon
 ```
 
@@ -199,8 +199,11 @@ sudo nano /etc/ld.so.preload
 # Put the following line inside ld.so.preload:
 /usr/local/lib/memcpy.so
 ```
+#### 7.Boot to CLI
 
+select Boot to CLI
 
+`Preferences` > `Raspberry Pi Configuration` > `System` > `Boot` > `To CLI`
 
 ## IV.Copy compiled kernel
 
@@ -215,6 +218,8 @@ sudo env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD
 ```
 
 #### kernel img & overlays folder
+
+for `5.1`
 
 ```
 cp ./arch/arm64/boot/Image /media/${USER}/boot/kernel8.img
@@ -240,18 +245,14 @@ disconnect microUSB(USB slave) & jumper,reboot,run
 ssh pi@raspberrypi.local
 ```
 
-then 
+then enable `radeon` module
 
 ```bash
 # if you want xorg is hardware acceleration,do not run this,radeon driver not works in xorg session,it will become software rendering
 sudo modprobe radeon
 ```
 
-## VI.Xorg Configuration(optional)
-
-deleted
-
-## VII.Benchmark & Utils(optional)
+## VI.Benchmark & Utils(optional)
 
 `glmark2`
 
@@ -264,8 +265,7 @@ ninja -C build
 sudo ninja -C build install
 ```
 
-run `glmark2-drm -b jellyfish` or `glmark2-drm`,other options you can refer [ubuntu manuals](https://manpages.ubuntu.com/manpages/focal/man1/glmark2.1.html)
-
+run `glmark2-drm`,other options you can refer [ubuntu manuals](https://manpages.ubuntu.com/manpages/focal/man1/glmark2.1.html)
 
 `vkmark`
 
@@ -313,39 +313,8 @@ select en US layout.
 sudo dpkg-reconfigure keyboard-configuration
 ```
 
-## VIII.Choose a sessions(optional)
+## VII.Change x-session(optional)
 
-#### LXDE Reinstall(optional)
-
-Because the desktop of raspberrypi renders abnormally after installing the radeon driver, we need to reinstall xorg to become a standard lxde session(software rendering)
-
-select Boot to CLI
-
-`Preferences` > `Raspberry Pi Configuration` > `System` > `Boot` > `To CLI`
-
-install package
-
-```
-sudo apt install -y meson libjpeg-dev libdrm-dev libudev-dev
-```
-
-`Ctrl + Alt + F2` to enable VT(Virtual Terminal),default username is `pi`,default pwd is `raspberry`
-
-```
-sudo apt remove libegl-mesa0
-```
-
-install libgbm-dev
-
-```
-sudo apt install libgbm-dev
-```
-
-install xorg
-
-```
-sudo apt-get install xorg
-```
 #### xfce install(optional)
 
 xfce's software rendering performance is better than LXDE
@@ -354,3 +323,11 @@ xfce's software rendering performance is better than LXDE
 sudo apt-get install xfce4-session xfce4-goodies
 sudo update-alternatives --config x-session-manager
 ```
+
+then
+
+```
+sudo update-alternatives --config x-session-manager
+```
+
+select xfce session,then `startx`
