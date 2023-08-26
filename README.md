@@ -342,12 +342,47 @@ sudo apt-get install -f
 phoronix-test-suite
 ```
 
+`vulkaninfo`
+
+```
+sudo apt-get install libvulkan-dev libvulkan1 vulkan-tools --no-install-recommends
+```
+
 `lm-sensor`
 
 ```
 sudo apt-get install lm-sensors
 sudo sensors-detect
 sensors
+```
+`kms-glsl`
+
+```
+sudo apt update
+sudo apt install gcc make
+sudo apt install libdrm-dev libgbm-dev libegl-dev libgles2-mesa-dev
+sudo apt install libxcb-randr0-dev
+git clone https://github.com/astefanutti/kms-glsl.git
+cd kms-glsl
+make
+```
+`glslViewer`
+
+```
+sudo apt install git build-essential cmake xorg-dev libglu1-mesa-dev libncurses5-dev libncursesw5-dev 
+sudo apt install ffmpeg libavcodec-dev libavcodec-extra libavfilter-dev libavfilter-extra libavdevice-dev libavformat-dev libavutil-dev libswscale-dev libv4l-dev libjpeg-dev libpng-dev libtiff-dev
+sudo apt install xvfb
+sudo apt install git cmake xorg-dev libglu1-mesa-dev libncurses5-dev libncursesw5-dev 
+sudo apt install git cmake libgbm-dev libdrm-dev libegl1-mesa-dev libgles2-mesa-dev libncurses5-dev libncursesw5-dev 
+git clone https://github.com/patriciogonzalezvivo/glslViewer.git
+cd glslViewer
+git submodule init
+git submodule update
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
 ```
 
 `keyboard layout`
