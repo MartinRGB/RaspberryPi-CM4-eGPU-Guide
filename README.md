@@ -24,6 +24,8 @@ If you want to get more information, I suggest you browse [aspberry-pi-pcie-devi
 
 **GPU Details:**
 
+AMD Radeon HD 6870
+
 |Front| IO| Top |
 | -------------| ------------- | ------------- |
 |![HD 6870](https://tpucdn.com/gpu-specs/images/c/256-front.small.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-top.jpg)  |
