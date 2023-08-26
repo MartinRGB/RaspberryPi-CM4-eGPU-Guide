@@ -1,4 +1,4 @@
-##Foreword
+## Foreword
 
 Please back up your data before building. There is no guarantee that some tools will still work after installing the kernel patch, so it is recommended that you install the tools before installing the patch.
 
@@ -79,12 +79,12 @@ Coreforge/linux
 ```
 cd linux
 sudo apt install libncurses-dev
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
 ```
 
 `Device Drivers` > `Graphics support` > `ATI Radeon` > `Press M` > `Save` > `Exit`
-
-~~make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig~~
+![](https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/menuconfig.png)
 
 then(I used j16 because I got 10900k(16 threads) and 11900k(20 threads)),
 ```
