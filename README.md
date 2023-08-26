@@ -375,7 +375,12 @@ sudo update-alternatives --config x-session-manager
 
 select xfce session,then `startx`
 
-## VIII.Switching Graphics Cards
+## VIII.Patch Xorg
+
+https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1516830289
+https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1288229056
+
+## VIIII.Switching Graphics Cards
 Note: Switching requires power off
 
 **Use RPI's GPU in both console and x-session**
