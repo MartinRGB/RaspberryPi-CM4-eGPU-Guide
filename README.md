@@ -313,8 +313,9 @@ run `glmark2-drm`,other options you can refer [ubuntu manuals](https://manpages.
 `vkmark`
 
 ```
-sudo apt install libvulkan-dev cmake libvulkan1 mesa-vulkan-drivers libglm-dev libassimp-dev
-sudo apt install meson libvulkan-dev libglm-dev libassimp-dev libxcb1-dev libxcb-icccm4-dev libwayland-dev wayland-protocols libdrm-dev libgbm-dev
+sudo apt install meson libvulkan-dev cmake libvulkan1 mesa-vulkan-drivers libglm-dev libassimp-dev libxcb1-dev libxcb-icccm4-dev libwayland-dev wayland-protocols libdrm-dev libgbm-dev
+git clone https://github.com/vkmark/vkmark.git
+cd vkmark
 meson build
 ninja -C build
 sudo ninja -C build install
