@@ -342,7 +342,7 @@ sudo update-alternatives --config x-session-manager
 
 select xfce session,then `startx`
 
-## Switching Graphics Cards
+## VIII.Switching Graphics Cards
 Note: Switching requires power off
 
 **Use RPI's GPU in both console and x-session**
@@ -360,3 +360,17 @@ If you want to use Radeon's GPU rendering in console.
 
 - Plug the HDMI cable into the Radeon GPU's HDMI connector
 - run `sudo modprobe radeon` after start.
+
+## Afterword
+
+Here is some my log files:
+
+- [lspci](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/blob/main/log/pcie.md)
+- [glxinfo](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/blob/main/log/glxinfo.md)
+- [vulkaninfo](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/blob/main/log/vulkaninfo.md)
+- [glmark2 result](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/blob/main/log/glmark2.md)
+
+Here is my config in boot:
+
+- [cmdline.txt](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/blob/main/boot/cmdline.md)
+- [config.txt](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/blob/main/boot/cibfug.md)
