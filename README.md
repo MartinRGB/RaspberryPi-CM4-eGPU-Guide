@@ -1,7 +1,7 @@
 
 <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/neofetch.png" width="50%" height="50%">
 
-If you want to get more information, I suggest you browse [aspberry-pi-pcie-devices](https://github.com/geerlingguy/raspberry-pi-pcie-devices) and its issue.
+If you want to get more information, I suggest you browse [raspberry-pi-pcie-devices](https://github.com/geerlingguy/raspberry-pi-pcie-devices) and its issue.
 
 ## My use case and hardware used
 
