@@ -1,6 +1,8 @@
 
 <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/neofetch.png" width="50%" height="50%">
 
+If you want to get more information, I suggest you browse [aspberry-pi-pcie-devices](https://github.com/geerlingguy/raspberry-pi-pcie-devices) and its issue.
+
 ## Foreword
 
 Please back up your data before building. There is no guarantee that some tools will still work after installing the kernel patch, so it is recommended that you install the tools before installing the patch.
@@ -339,3 +341,22 @@ sudo update-alternatives --config x-session-manager
 ```
 
 select xfce session,then `startx`
+
+## Switching Graphics Cards
+Note: Switching requires power off
+
+**Use RPI's GPU in both console and x-session**
+
+If you want to use RPI's GPU rendering in x session & console.
+
+- Plug the HDMI cable into the CM4's HDMI connector
+- Do not run `sudo modprobe radeon`,just `startx` directly.
+
+**Use Radeon GPU in console**
+
+Currently only console is driven by `radeon`,if you enabled radeon driver,in x-session,it will fallback to software-rendering,which is very bad performance.
+
+If you want to use Radeon's GPU rendering in console.
+
+- Plug the HDMI cable into the Radeon GPU's HDMI connector
+- run `sudo modprobe radeon` after start.
