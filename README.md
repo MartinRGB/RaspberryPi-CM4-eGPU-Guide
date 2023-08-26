@@ -355,6 +355,13 @@ sudo apt-get install lm-sensors
 sudo sensors-detect
 sensors
 ```
+
+`glxinfo`
+
+```
+sudo apt-get install mesa-utils
+```
+
 `kms-glsl`
 
 ```
