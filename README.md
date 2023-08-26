@@ -1,21 +1,50 @@
+##Foreword
+
 Please back up your data before building. There is no guarantee that some tools will still work after installing the kernel patch, so it is recommended that you install the tools before installing the patch.
 
 Since this is a hack, it is inevitable that you will have to reinstall many times. Before starting, I highly recommend reading these articles
 
 **Flash OS**
+
 [How to flash Raspberry Pi OS onto the Compute Module 4 eMMC with usbboot](https://www.jeffgeerling.com/blog/2020/how-flash-raspberry-pi-os-compute-module-4-emmc-usbboot)
+
 **Building Kernel**
+
 [building-the-kernel-locally](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#building-the-kernel-locally)
+
 [Raspberry Pi Linux Cross-compilation Environment](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile)
+
 [cross-compile](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile)
 
+## Requirements:
 
-**mainly work in Linux(Ubuntu/Debian) System**
+**PC**:
+  - A Linux(Ubuntu/Debian) PC,flash os & cross-compile on it
+
+**CM4 Core Board**:
+  - [Compute Module 4](https://www.raspberrypi.com/products/compute-module-4/?variant=raspberry-pi-cm4001000)
+    
+**CM4 IO Board**(I've tried both of the following):
+  - [Compute Module 4 IO Board](https://www.raspberrypi.com/products/compute-module-4-io-board/)
+    - You need n 15-Pin SATA Male to 4-Pin Floppy FDD Female like [this](https://www.amazon.co.uk/KALEA-INFORMATIQUE-Floppy-Molex-POWER-cable/dp/B07Z9H9ZLZ) to power Pi.
+  - [CM4-IO-BASE-A](https://www.waveshare.com/wiki/)
+    
+I recommend this one because it has an external power connector and you can use an ATX power supply to power both GPU & Pi
+
+**Adapter**:
+  - PCI-E 1x to PCI-E 16x riser(for Official CM4 IO Board)
+  - M.2 to PCI-E 16x riser(for CM4-IO-BASE-A)
+
+**ATX PSU**：
+  - Modular/Rated Power 500W+(Because I used some high-powered graphics cards)
+
+**Raspberry Pi OS Image**:
+  -Kernel 5.1 - [2022-01-28-raspios-bullseye-arm64-full.zip](http://downloads.raspberrypi.org/raspios_full_arm64/images/raspios_full_arm64-2022-01-28/)
+  -Or Kernel 6.1 - newest RPI OS Img,download from [official download page](https://www.raspberrypi.com/software/operating-systems/)
 
 After testing, if you use the 64 bit image from 2023-05-03 (kernel version 6.1) as a base and then add the Radeon driver, the performance is better than the 2022 (kernel version 5.1) package mentioned in JeefGeerling's article
 
-the kernel 6.1 image info in [official download page](https://www.raspberrypi.com/software/operating-systems/)
-
+the kernel 6.1 image info:
 ```
 Raspberry Pi OS with desktop
 Release date: May 3rd 2023
@@ -23,9 +52,9 @@ System: 64-bit
 Kernel version: 6.1
 Debian version: 11 (bullseye)
 Size: 818MB
-Show SHA256 file integrity hash:
-Release notes
 ```
+
+now let's start.
 
 ## I.Compile Kernel
 #### 1.in your PC Linux system
