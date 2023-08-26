@@ -242,6 +242,8 @@ cp ./arch/arm64/boot/dts/overlays/README /media/${USER}/bootfs/overlays/
 
 ## V.Restart & Load the driver
 
+**disconnect HDMI.**
+
 disconnect microUSB(USB slave) & jumper,reboot,run
 
 ```
