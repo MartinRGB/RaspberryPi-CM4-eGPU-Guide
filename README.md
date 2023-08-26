@@ -1,3 +1,15 @@
+Please back up your data before building. There is no guarantee that some tools will still work after installing the kernel patch, so it is recommended that you install the tools before installing the patch.
+
+Since this is a hack, it is inevitable that you will have to reinstall many times. Before starting, I highly recommend reading these articles
+
+**Flash OS**
+[How to flash Raspberry Pi OS onto the Compute Module 4 eMMC with usbboot](https://www.jeffgeerling.com/blog/2020/how-flash-raspberry-pi-os-compute-module-4-emmc-usbboot)
+**Building Kernel**
+[building-the-kernel-locally](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#building-the-kernel-locally)
+[Raspberry Pi Linux Cross-compilation Environment](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile)
+[cross-compile](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile)
+
+
 **mainly work in Linux(Ubuntu/Debian) System**
 
 After testing, if you use the 64 bit image from 2023-05-03 (kernel version 6.1) as a base and then add the Radeon driver, the performance is better than the 2022 (kernel version 5.1) package mentioned in JeefGeerling's article
@@ -21,8 +33,6 @@ Release notes
 sudo apt install git bc bison flex libssl-dev make 
 sudo apt-get install gcc-aarch64-linux-gnu gh
 ```
-referenced from [building-the-kernel-locally](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#building-the-kernel-locally)
-
 #### 2.clone the project & check out jeffgeerling's brach:
 ```
 git clone https://github.com/Coreforge/linux.git
@@ -54,14 +64,9 @@ make -j16 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
 
 While you are compiling your code, you can install the image(See Part II).
 
-referenced from [Raspberry Pi Linux Cross-compilation Environment](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile)
-
 ## II.Install Image & Edit the boot config
 
 #### 1.install `2022-01-28-raspios-bullseye-arm64-full.zip` from [here](http://downloads.raspberrypi.org/raspios_full_arm64/images/raspios_full_arm64-2022-01-28/)
-
-How to install Pi image? See this article —— [How to flash Raspberry Pi OS onto the Compute Module 4 eMMC with usbboot
-](https://www.jeffgeerling.com/blog/2020/how-flash-raspberry-pi-os-compute-module-4-emmc-usbboot)
 
 #### 2.backup the boot drive & edit config in `/boot`.
 
@@ -79,9 +84,6 @@ radeon.uvd=0 pci=noaer,nomsi radeon.msi=0 radeon.pcie_gen2=0 pcie_aspm=off radeo
 ```
 
 disconnect the USB slave port connection & power, then remove the eMMC Boot disable jumper on J2. 
-
-referenced from [How to flash Raspberry Pi OS onto the Compute Module 4 eMMC with usbboot
-](https://www.jeffgeerling.com/blog/2020/how-flash-raspberry-pi-os-compute-module-4-emmc-usbboot)
 
 ## III.Init the OS
 
@@ -200,8 +202,6 @@ cp ./arch/arm64/boot/dts/broadcom/*.dtb /media/${USER}/bootfs/
 cp ./arch/arm64/boot/dts/overlays/*.dtb* /media/${USER}/bootfs/overlays/
 cp ./arch/arm64/boot/dts/overlays/README /media/${USER}/bootfs/overlays/
 ```
-
-Referenced from [cross-compile](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile)
 
 ## V.Restart & Load the driver
 
