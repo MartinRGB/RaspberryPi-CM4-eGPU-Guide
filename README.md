@@ -7,7 +7,7 @@ If you want to get more information, I suggest you browse [aspberry-pi-pcie-devi
 
 Please back up your data before building. There is no guarantee that some tools will still work after installing the kernel patch, so it is recommended that you install the tools before installing the patch.
 
-Since this is a hack, it is inevitable that you will have to reinstall many times. Before starting, I highly recommend reading these articles
+Since this is a hack, it is inevitable that you will have to reinstall many times. Before starting, I highly recommend reading these articles(mostly from Jeff Geerling's blog).
 
 **Flash OS**
 
