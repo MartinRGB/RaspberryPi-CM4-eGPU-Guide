@@ -310,7 +310,7 @@ sudo reboot
 sudo nano /etc/apt/sources.list
 #change all 'bullseye' to 'bookworm' in sources.list
 sudo apt update
-sudo apt upgrade
+# sudo apt upgrade
 # sudo apt dist-upgrade
 ```
 
@@ -450,6 +450,8 @@ sudo dpkg-reconfigure keyboard-configuration
 ```
 
 ## Change x-session(optional)
+
+`killall xinit` if you miss rendering issue
 
 #### xfce install(optional)
 
