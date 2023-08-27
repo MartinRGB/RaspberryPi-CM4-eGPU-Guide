@@ -246,6 +246,8 @@ select Boot to CLI
 
 `Preferences` > `Raspberry Pi Configuration` > `System` > `Boot` > `To CLI`
 
+also enable `Network at Boot`
+
 ## Copy compiled kernel
 
 `sudo shutdown -h now` shutdown the Pi
