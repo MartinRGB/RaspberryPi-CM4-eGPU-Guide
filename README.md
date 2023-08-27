@@ -302,7 +302,7 @@ sudo apt upgrade
 make & install `mesa`
 
 ```
-sudo apt-get meson install llvm byacc libwayland-dev wayland-protocols libwayland-egl-backend-dev libxcb-glx0-dev libxcb-xrm-dev libxcb-composite0-dev libxcb-shm0-dev libx11-xcb-dev libxcb-dri2-0-dev libxcb-dri3-dev libxcb-present-dev libxshmfence-dev python3-mako flex libc6-dev libdrm-dev libxext-dev libxfixes-dev libxxf86vm-dev libxrandr-dev
+sudo apt-get install meson llvm byacc libwayland-dev wayland-protocols libwayland-egl-backend-dev libxcb-glx0-dev libxcb-xrm-dev libxcb-composite0-dev libxcb-shm0-dev libx11-xcb-dev libxcb-dri2-0-dev libxcb-dri3-dev libxcb-present-dev libxshmfence-dev python3-mako flex libc6-dev libdrm-dev libxext-dev libxfixes-dev libxxf86vm-dev libxrandr-dev
 git clone https://github.com/Coreforge/mesa.git
 git checkout pistuff
 mkdir build
