@@ -301,19 +301,6 @@ sudo nano /etc/ld.so.preload
 /usr/local/lib/memcpy.so
 ```
 
-Update `/etc/apt/sources.list` from Bullseye to BookWorm:
-
-```
-sudo apt update
-sudo apt upgrade -y
-sudo reboot
-sudo nano /etc/apt/sources.list
-#change all 'bullseye' to 'bookworm' in sources.list
-sudo apt update
-# sudo apt upgrade
-# sudo apt dist-upgrade
-```
-
 make & install `mesa`
 
 ```
