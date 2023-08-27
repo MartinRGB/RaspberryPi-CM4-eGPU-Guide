@@ -286,7 +286,11 @@ https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1
 
 https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1288229056
 
-Add `radeon.msi=0 radeon.pcie_gen2=0 pcie_aspm=off radeon.aspm=0 radeon.runpm=0 radeon.dpm=0 pci=nomsi` to `cmdline.txt`
+Add these to `/boot/cmdline.txt`
+
+```
+radeon.msi=0 radeon.pcie_gen2=0 pcie_aspm=off radeon.aspm=0 radeon.runpm=0 radeon.dpm=0 pci=nomsi
+```
 
 Get new version of `memcpy.so`
 
