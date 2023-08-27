@@ -280,6 +280,8 @@ cp ./arch/arm64/boot/dts/overlays/README /media/${USER}/bootfs/overlays/
 
 ## Install Mesa from Coreforge's fork（Current in testing)
 
+This part I used Coreforge's `rpi-5.15.y-radeon` branch for kernel patch and `2023-05-03-raspios-bullseye-arm64` for basic system
+
 Relevant discussion references：
 
 https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1516830289
