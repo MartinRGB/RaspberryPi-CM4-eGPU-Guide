@@ -134,7 +134,7 @@ make -j16 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
 
 While you are compiling your code, you can install the image(See Part II).
 
-## II.Install Image & Edit the boot config
+## Install Image & Edit the boot config
 
 #### 1.install RPI OS img
 
