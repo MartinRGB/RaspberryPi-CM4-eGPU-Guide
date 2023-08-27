@@ -441,7 +441,6 @@ xfce's software rendering performance is better than LXDE
 
 ```
 sudo apt-get install xfce4-session xfce4-goodies
-sudo update-alternatives --config x-session-manager
 ```
 
 then
