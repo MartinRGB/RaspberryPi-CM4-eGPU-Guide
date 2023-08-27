@@ -251,6 +251,7 @@ select Boot to CLI
 Relevant discussion references：
 
 https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1516830289
+
 https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1288229056
 
 Update `/etc/apt/sources.list` from Bullseye to BookWorm:
