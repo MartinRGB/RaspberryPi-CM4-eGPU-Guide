@@ -260,7 +260,7 @@ sudo env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD
 
 #### kernel img & overlays folder
 
-for `5.1`
+for `kernel 5.1`
 
 ```
 cp ./arch/arm64/boot/Image /media/${USER}/boot/kernel8.img
@@ -269,7 +269,7 @@ cp ./arch/arm64/boot/dts/overlays/*.dtb* /media/${USER}/boot/overlays/
 cp ./arch/arm64/boot/dts/overlays/README /media/${USER}/boot/overlays/
 ```
 
-for `6.1`
+for `kernel 6.1`
 
 ```
 cp ./arch/arm64/boot/Image /media/${USER}/bootfs/kernel8.img
