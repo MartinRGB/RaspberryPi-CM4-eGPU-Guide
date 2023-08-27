@@ -316,6 +316,7 @@ git checkout pistuff
 mkdir build
 cd build
 meson ..
+meson configure -Dgallium-drivers=v3d,vc4,freedreno,etnaviv,nouveau,tegra,virgl,lima,panfrost,swrast,r600
 sudo ninja install
 ```
 
