@@ -188,9 +188,7 @@ tar -xvzf tools.tar.gz
 #### 2.Install AMD driver
 
 ```
-sudo apt-get update
-sudo apt update
-sudo apt install -y firmware-amd-graphics
+sudo apt-get update &&sudo apt update && sudo apt install -y firmware-amd-graphics
 ```
 
 #### 3.install neofetch
