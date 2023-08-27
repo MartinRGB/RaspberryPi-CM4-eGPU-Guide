@@ -246,6 +246,38 @@ select Boot to CLI
 
 `Preferences` > `Raspberry Pi Configuration` > `System` > `Boot` > `To CLI`
 
+## Copy compiled kernel
+
+`sudo shutdown -h now` shutdown the Pi
+
+plug in microUSB(USB slave) & connect the jumper,dive into the built linux kernel's path,run:
+
+#### Modules Folder
+
+```
+sudo env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=/media/${USER}/rootfs modules_install
+```
+
+#### kernel img & overlays folder
+
+for `5.1`
+
+```
+cp ./arch/arm64/boot/Image /media/${USER}/boot/kernel8.img
+cp ./arch/arm64/boot/dts/broadcom/*.dtb /media/${USER}/boot/
+cp ./arch/arm64/boot/dts/overlays/*.dtb* /media/${USER}/boot/overlays/
+cp ./arch/arm64/boot/dts/overlays/README /media/${USER}/boot/overlays/
+```
+
+for `6.1`
+
+```
+cp ./arch/arm64/boot/Image /media/${USER}/bootfs/kernel8.img
+cp ./arch/arm64/boot/dts/broadcom/*.dtb /media/${USER}/bootfs/
+cp ./arch/arm64/boot/dts/overlays/*.dtb* /media/${USER}/bootfs/overlays/
+cp ./arch/arm64/boot/dts/overlays/README /media/${USER}/bootfs/overlays/
+```
+
 ## Install Mesa from Coreforge's fork
 
 Relevant discussion references：
@@ -277,38 +309,6 @@ mkdir build
 cd build
 meson ..
 sudo ninja install
-```
-
-## Copy compiled kernel
-
-`sudo shutdown -h now` shutdown the Pi
-
-plug in microUSB(USB slave) & connect the jumper,dive into the built linux kernel's path,run:
-
-#### Modules Folder
-
-```
-sudo env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=/media/${USER}/rootfs modules_install
-```
-
-#### kernel img & overlays folder
-
-for `5.1`
-
-```
-cp ./arch/arm64/boot/Image /media/${USER}/boot/kernel8.img
-cp ./arch/arm64/boot/dts/broadcom/*.dtb /media/${USER}/boot/
-cp ./arch/arm64/boot/dts/overlays/*.dtb* /media/${USER}/boot/overlays/
-cp ./arch/arm64/boot/dts/overlays/README /media/${USER}/boot/overlays/
-```
-
-for `6.1`
-
-```
-cp ./arch/arm64/boot/Image /media/${USER}/bootfs/kernel8.img
-cp ./arch/arm64/boot/dts/broadcom/*.dtb /media/${USER}/bootfs/
-cp ./arch/arm64/boot/dts/overlays/*.dtb* /media/${USER}/bootfs/overlays/
-cp ./arch/arm64/boot/dts/overlays/README /media/${USER}/bootfs/overlays/
 ```
 
 ## Restart & Load the driver
