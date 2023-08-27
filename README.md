@@ -280,7 +280,7 @@ cp ./arch/arm64/boot/dts/overlays/README /media/${USER}/bootfs/overlays/
 
 ## Install Mesa from Coreforge's fork（Current in testing)
 
-This part I used Coreforge's `rpi-5.15.y-radeon` branch for kernel patch and `2023-05-03-raspios-bullseye-arm64` for basic system
+This part I used Coreforge's `rpi-5.15.y-radeon` branch for kernel patch and `2023-05-03-raspios-bullseye-arm64` for basic system.
 
 Relevant discussion references：
 
@@ -318,9 +318,11 @@ git checkout pistuff
 mkdir build
 cd build
 meson ..
+# Do not forget add 'r600' into 'gallium-drivers' option
 meson configure -Dgallium-drivers=v3d,vc4,freedreno,etnaviv,nouveau,tegra,virgl,lima,panfrost,swrast,r600
 sudo ninja install
 
+# Otherwise you can't get in x session
 sudo cp /usr/local/lib/aarch64-linux-gnu/libXvMCr600.so.1.0 /usr/lib/aarch64-linux-gnu/libXvMCr600.so.1.0
 sudo cp /usr/local/lib/aarch64-linux-gnu/libXvMCr600.so.1.0.0 /usr/lib/aarch64-linux-gnu/libXvMCr600.so.1.0.0
 sudo cp /usr/local/lib/aarch64-linux-gnu/vdpau/libvdpau_r600.so /usr/lib/aarch64-linux-gnu/vdpau/libvdpau_r600.so
