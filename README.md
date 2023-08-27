@@ -286,6 +286,19 @@ https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1
 
 https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1288229056
 
+Get new version of `memcpy.so`
+
+```
+wget https://gist.githubusercontent.com/Coreforge/91da3d410ec7eb0ef5bc8dee24b91359/raw/b4848d1da9fff0cfcf7b601713efac1909e408e8/memcpy_unaligned.c
+
+gcc -shared -fPIC -o memcpy.so memcpy_unaligned.c
+sudo mv memcpy.so /usr/local/lib/memcpy.so
+sudo nano /etc/ld.so.preload
+
+# Put the following line inside ld.so.preload:
+/usr/local/lib/memcpy.so
+```
+
 Update `/etc/apt/sources.list` from Bullseye to BookWorm:
 
 ```
