@@ -96,7 +96,7 @@ Size: 818MB
 
 now let's start.
 
-## I.Compile Kernel
+## Compile Kernel
 #### 1.in your PC Linux system
 ```
 sudo apt install git bc bison flex libssl-dev make 
@@ -155,7 +155,7 @@ radeon.uvd=0 pci=noaer,nomsi radeon.msi=0 radeon.pcie_gen2=0 pcie_aspm=off radeo
 
 disconnect the USB slave port connection & power, then remove the eMMC Boot disable jumper on J2. 
 
-## III.Init the OS
+## Init the OS
 
 #### 1.tool preparation and SSH login
 
@@ -246,7 +246,39 @@ select Boot to CLI
 
 `Preferences` > `Raspberry Pi Configuration` > `System` > `Boot` > `To CLI`
 
-## IV.Copy compiled kernel
+## Install Mesa from Coreforge's fork
+
+Relevant discussion references：
+
+https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1516830289
+https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1288229056
+
+Update `/etc/apt/sources.list` from Bullseye to BookWorm:
+
+```
+sudo apt update
+sudo apt upgrade -y
+sudo reboot
+sudo nano /etc/apt/sources.list
+#change all 'bullseye' to 'bookworm' in sources.list
+sudo apt update
+sudo apt upgrade
+# sudo apt dist-upgrade
+```
+
+make & install `mesa`
+
+```
+sudo apt-get meson install llvm byacc libwayland-dev wayland-protocols libwayland-egl-backend-dev libxcb-glx0-dev libxcb-xrm-dev libxcb-composite0-dev libxcb-shm0-dev libx11-xcb-dev libxcb-dri2-0-dev libxcb-dri3-dev libxcb-present-dev libxshmfence-dev python3-mako flex libc6-dev libdrm-dev libxext-dev libxfixes-dev libxxf86vm-dev libxrandr-dev
+git clone https://github.com/Coreforge/mesa.git
+git checkout pistuff
+mkdir build
+cd build
+meson ..
+sudo ninja install
+```
+
+## Copy compiled kernel
 
 `sudo shutdown -h now` shutdown the Pi
 
@@ -278,7 +310,7 @@ cp ./arch/arm64/boot/dts/overlays/*.dtb* /media/${USER}/bootfs/overlays/
 cp ./arch/arm64/boot/dts/overlays/README /media/${USER}/bootfs/overlays/
 ```
 
-## V.Restart & Load the driver
+## Restart & Load the driver
 
 **disconnect HDMI.**
 
@@ -295,7 +327,7 @@ then enable `radeon` module
 sudo modprobe radeon
 ```
 
-## VI.Benchmark & Utils(optional)
+## Benchmark & Utils(optional)
 
 `glmark2`
 
@@ -400,7 +432,7 @@ select en US layout.
 sudo dpkg-reconfigure keyboard-configuration
 ```
 
-## VII.Change x-session(optional)
+## Change x-session(optional)
 
 #### xfce install(optional)
 
@@ -419,12 +451,12 @@ sudo update-alternatives --config x-session-manager
 
 select xfce session,then `startx`
 
-## VIII.Patch Xorg
+## Patch Xorg
 
-https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1516830289
-https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4#issuecomment-1288229056
+~~deleted~~
 
-## VIIII.Switching Graphics Cards
+## Switching Graphics Cards
+
 Note: Switching requires power off
 
 **Use RPI's GPU in both console and x-session**
