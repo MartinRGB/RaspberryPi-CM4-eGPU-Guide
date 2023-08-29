@@ -1,5 +1,7 @@
 `F_OK` patch 
 
+https://bugs.gentoo.org/741490
+
 ```
 --- a/src/video/SDL_egl.c
 +++ b/src/video/SDL_egl.c
