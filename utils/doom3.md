@@ -1,3 +1,5 @@
+https://forums.raspberrypi.com/viewtopic.php?t=252254
+
 `F_OK` patch 
 
 https://bugs.gentoo.org/741490
