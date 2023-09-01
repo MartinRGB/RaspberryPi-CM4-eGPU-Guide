@@ -336,7 +336,7 @@ sudo cp /usr/local/lib/aarch64-linux-gnu/dri/r600_dri.so /usr/lib/aarch64-linux-
 sudo cp /usr/local/lib/aarch64-linux-gnu/dri/r600_drv_video.so /usr/lib/aarch64-linux-gnu/dri/r600_drv_video.so
 ```
 
-Chrome Setting:
+Chromium Setting:
 
 ```
 chrome://flags/#ignore-gpu-blocklist —— Override software rendering list —— Enabled
