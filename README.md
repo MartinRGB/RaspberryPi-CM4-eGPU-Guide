@@ -278,7 +278,7 @@ cp ./arch/arm64/boot/dts/overlays/*.dtb* /media/${USER}/bootfs/overlays/
 cp ./arch/arm64/boot/dts/overlays/README /media/${USER}/bootfs/overlays/
 ```
 
-## Install Mesa from Coreforge's fork（Which provide hardware-acceleration in Xorg session,current in testing)
+## Install Mesa from Coreforge's fork（Which provide hardware-acceleration in Xorg session window)
 
 This part I used Coreforge's `rpi-5.15.y-radeon` branch for kernel patch and `2023-05-03-raspios-bullseye-arm64` for basic system.
 
@@ -334,6 +334,14 @@ sudo cp /usr/local/lib/aarch64-linux-gnu/libXvMCr600.so.1 /usr/lib/aarch64-linux
 sudo cp /usr/local/lib/aarch64-linux-gnu/dri/r600_drv_video.so /usr/lib/aarch64-linux-gnu/dri/r600_drv_video.so
 sudo cp /usr/local/lib/aarch64-linux-gnu/dri/r600_dri.so /usr/lib/aarch64-linux-gnu/dri/r600_dri.so
 sudo cp /usr/local/lib/aarch64-linux-gnu/dri/r600_drv_video.so /usr/lib/aarch64-linux-gnu/dri/r600_drv_video.so
+```
+
+Chrome Setting:
+
+```
+chrome://flags/#ignore-gpu-blocklist —— Override software rendering list —— Enabled
+chrome://flags/#enable-gpu-rasterization —— GPU rasterization —— Enabled
+chrome：flags/#disable-accelerated-video-decoe —— Hardware-accelerated video decode —— Disabled (Or Youtube Video will not play)
 ```
 
 ## Restart & Load the driver
