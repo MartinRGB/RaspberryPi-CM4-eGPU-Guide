@@ -20,7 +20,7 @@ If you want to get more information, I suggest you browse [raspberry-pi-pcie-dev
 | Waveshare - CM4-IO-BASE-A| <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/Hardware/CM4-IO-BASE-A.png" width="25%" height="25%">      | M.2 Interface on backface | 
 | ADT-Link - PCI-E x1 to PCI-E 16x riser| <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/Hardware/PCIE1Riser.png" width="25%" height="25%">      | for CM4 IO Board | 
 | ADT-Link - M.2 to PCI-E 16x riser| <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/Hardware/M2Riser.png" width="25%" height="25%">      | for CM4-IO-BASE-A | 
-| GreatWall - GamingPower G5 550w| <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/Hardware/PSU.png" width="25%" height="25%">      | - 24 Pin Computer Power Connectors <br> - PCI-E power cables x 2 <br> - Floppy 4 pins to SATA x 2(for riser & CM4 IO Board) | 
+| GreatWall - GamingPower G5 550w| <img src="https://raw.githubusercontent.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/main/art/Hardware/PSU.png" width="25%" height="25%">      | - 24 Pin ATX Connectors(with **Jumper**) <br> - PCI-E power cables x 2 <br> - Floppy 4 pins to SATA x 2(for riser & CM4 IO Board) | 
 
 **GPU Details:**
 
