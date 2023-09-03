@@ -26,12 +26,12 @@ If you want to get more information, I suggest you browse [raspberry-pi-pcie-dev
 
 Image via GPUZ
 
-| GPU | GPU Name | Memory Size | Front| IO | Top | Test passed | Note |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: |
-| AMD Radeon HD 6870 | Barts | 1GB | ![](https://tpucdn.com/gpu-specs/images/c/256-front.small.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-top.jpg)  | Yes | Need two PCI-E power cables |
-| AMD Radeon R9 390 | Grenada | 8GB | ![](https://tpucdn.com/gpu-specs/images/c/2664-front.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-top.jpg)  | No | Memory alignment fault issue. <br> Need two PCI-E power cables |
-| XFX R9 290X(4GB) | Hawaii | 4GB | ![](https://tpucdn.com/gpu-specs/images/b/3118-front.jpg) | - | - | No | Memory alignment fault issue. <br> Need two PCI-E power cables |
-| HIS HD 7970 IceQ X2 | Tahiti | 3GB | ![](https://tpucdn.com/gpu-specs/images/b/56-front.jpg) |![](https://tpucdn.com/gpu-specs/images/b/56-i-o.jpg) | ![](https://tpucdn.com/gpu-specs/images/b/56-top.jpg)| In shipment | Need two PCI-E power cables |
+| GPU | GPU Name | Memory Size | Number of PCIE Cables required | Front| IO | Top | Test passed | Note |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: |
+| AMD Radeon HD 6870 | Barts | 1GB | x1 | ![](https://tpucdn.com/gpu-specs/images/c/256-front.small.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-top.jpg)  | Yes | - |
+| AMD Radeon R9 390 | Grenada | 8GB | x2 | ![](https://tpucdn.com/gpu-specs/images/c/2664-front.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-top.jpg)  | No | Memory alignment fault issue. |
+| XFX R9 290X(4GB) | Hawaii | 4GB | x2 | ![](https://tpucdn.com/gpu-specs/images/b/3118-front.jpg) | - | - | No | Memory alignment fault issue. |
+| HIS HD 7970 IceQ X2 | Tahiti | 3GB | x2 | ![](https://tpucdn.com/gpu-specs/images/b/56-front.jpg) |![](https://tpucdn.com/gpu-specs/images/b/56-i-o.jpg) | ![](https://tpucdn.com/gpu-specs/images/b/56-top.jpg)| In shipment | - |
 
 **Video**
 
