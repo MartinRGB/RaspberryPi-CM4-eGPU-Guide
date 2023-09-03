@@ -26,9 +26,9 @@ If you want to get more information, I suggest you browse [raspberry-pi-pcie-dev
 
 AMD Radeon HD 6870,**Need two PCI-E power cables.**
 
-|Front| IO| Top |
-| -------------| ------------- | ------------- |
-|![HD 6870](https://tpucdn.com/gpu-specs/images/c/256-front.small.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-top.jpg)  |
+|Front| IO| Top | Test passed |
+| -------------| ------------- | ------------- | ------------- |
+|![HD 6870](https://tpucdn.com/gpu-specs/images/c/256-front.small.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-top.jpg)  | Yes |
 
 **Video**
 
