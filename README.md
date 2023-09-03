@@ -26,11 +26,12 @@ If you want to get more information, I suggest you browse [raspberry-pi-pcie-dev
 
 Image via GPUZ
 
-| GPU | GPU Name | Front| IO| Top | Test passed | Note |
-| :---: | :---:  | -------------| ------------- | ------------- | :---: | :---: |
-| AMD Radeon HD 6870(1GB) | Barts | ![](https://tpucdn.com/gpu-specs/images/c/256-front.small.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-top.jpg)  | Yes | Need two PCI-E power cables |
-| AMD Radeon R9 390(8GB) | Grenada | ![](https://tpucdn.com/gpu-specs/images/c/2664-front.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-top.jpg)  | No | Memory alignment fault issue. <br> Need two PCI-E power cables |
-| XFX R9 290X(4GB) | Hawaii | - | - | - | No | Memory alignment fault issue. <br> Need two PCI-E power cables |
+| GPU | GPU Name | Memory Size | Front| IO| Top | Test passed | Note |
+| :---: | :---: | :---: | :---:  | :---:  | :---: | :---: |
+| AMD Radeon HD 6870 | Barts | 1GB | ![](https://tpucdn.com/gpu-specs/images/c/256-front.small.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-top.jpg)  | Yes | Need two PCI-E power cables |
+| AMD Radeon R9 390 | Grenada | 8GB | ![](https://tpucdn.com/gpu-specs/images/c/2664-front.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-top.jpg)  | No | Memory alignment fault issue. <br> Need two PCI-E power cables |
+| XFX R9 290X(4GB) | Hawaii | 4GB | - | - | - | No | Memory alignment fault issue. <br> Need two PCI-E power cables |
+| HIS HD 7970 IceQ X2 | Tahiti | 3GB |![](https://tpucdn.com/gpu-specs/images/b/56-front.jpg) |![](https://tpucdn.com/gpu-specs/images/b/56-i-o.jpg) | ![](https://tpucdn.com/gpu-specs/images/b/56-top.jpg)| In shipment | Need two PCI-E power cables |
 
 **Video**
 
