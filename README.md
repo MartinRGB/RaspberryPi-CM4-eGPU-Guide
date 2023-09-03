@@ -24,11 +24,13 @@ If you want to get more information, I suggest you browse [raspberry-pi-pcie-dev
 
 **GPU Details:**
 
-AMD Radeon HD 6870,**Need two PCI-E power cables.**
+Image via GPUZ
 
-|Front| IO| Top | Test passed |
-| -------------| ------------- | ------------- | ------------- |
-|![HD 6870](https://tpucdn.com/gpu-specs/images/c/256-front.small.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-top.jpg)  | Yes |
+| GPU | GPU Name | Front| IO| Top | Test passed | Note |
+| :---: | :---:  | -------------| ------------- | ------------- | :---: | :---: |
+| AMD Radeon HD 6870(1GB) | Barts | ![](https://tpucdn.com/gpu-specs/images/c/256-front.small.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-top.jpg)  | Yes | Need two PCI-E power cables |
+| AMD Radeon R9 390(8GB) | Grenada | ![](https://tpucdn.com/gpu-specs/images/c/2664-front.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-top.jpg)  | No | Memory alignment fault issue. <br> Need two PCI-E power cables |
+| XFX R9 290X(4GB) | Hawaii | - | - | - | No | Memory alignment fault issue. <br> Need two PCI-E power cables |
 
 **Video**
 
