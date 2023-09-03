@@ -21,7 +21,7 @@ add@line 89
 
 full `drivers/gpu/drm/ttm/ttm_tt.c`(tested in 5.15 & 5.16)
 
-```clang
+```c
 /* SPDX-License-Identifier: GPL-2.0 OR MIT */
 /**************************************************************************
  *
@@ -490,7 +490,7 @@ EXPORT_SYMBOL(ttm_kmap_iter_tt_init);
 
 full `include/drm/ttm/ttm_tt.h`(tested in 5.15 & 5.16)
 
-```clang
+```c
 /**************************************************************************
  *
  * Copyright (c) 2006-2009 Vmware, Inc., Palo Alto, CA., USA
