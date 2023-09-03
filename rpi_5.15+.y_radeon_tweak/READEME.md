@@ -1,3 +1,7 @@
+Based on Coreforge's linux [repo](https://github.com/Coreforge/linux/commit/b3134bd0511c2676a96d0d9c018cc035f6877360)
+
+Kernel Version is `5.10.33`
+
 `include/drm/ttm/ttm_tt.c`
 add@line 130
 ```
