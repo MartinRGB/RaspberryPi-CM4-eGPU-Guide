@@ -31,7 +31,9 @@ Image via GPUZ
 | AMD Radeon HD 6870 | Barts | 1GB | x1 | ![](https://tpucdn.com/gpu-specs/images/c/256-front.small.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-top.jpg)  | Yes | - |
 | AMD Radeon R9 390 | Grenada | 8GB | x2 | ![](https://tpucdn.com/gpu-specs/images/c/2664-front.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-top.jpg)  | No | Memory alignment fault issue. |
 | XFX R9 290X(4GB) | Hawaii | 4GB | x2 | ![](https://tpucdn.com/gpu-specs/images/b/3118-front.jpg) | - | - | No | Memory alignment fault issue. |
-| HIS HD 7970 IceQ X2 | Tahiti | 3GB | x2 | ![](https://tpucdn.com/gpu-specs/images/b/56-front.jpg) |![](https://tpucdn.com/gpu-specs/images/b/56-i-o.jpg) | ![](https://tpucdn.com/gpu-specs/images/b/56-top.jpg)| In shipment | - |
+| HIS HD 7970 IceQ X2 | Tahiti | 3GB | x2 | ![](https://tpucdn.com/gpu-specs/images/b/56-front.jpg) |![](https://tpucdn.com/gpu-specs/images/b/56-i-o.jpg) | ![](https://tpucdn.com/gpu-specs/images/b/56-top.jpg)| No | Memory alignment fault issue. |
+
+Conclusions：I suggest getting a version of the Northern Island series 1G RAM video card.
 
 **Video**
 
