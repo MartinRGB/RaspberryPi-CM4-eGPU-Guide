@@ -519,7 +519,28 @@ If you want to use Radeon's GPU rendering in console.
 
 ## Kernel 6.5(Optional)
 
-You can also use the [official 6.5 kernel](https://github.com/raspberrypi/linux/tree/rpi-6.5.y)  and replace with files in this [link](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/tree/main/rpi_6.5.y_radeon_tweak).In kernel 6.5,the performance of GPU is better.
+You can also use the [official 6.5 kernel](https://github.com/raspberrypi/linux/tree/rpi-6.5.y)  and replace with files in this [link](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/tree/main/rpi_6.5.y_radeon_tweak).In kernel 6.5,the performance of GPU & Mem is better.
+
+## Overclock(Optional)
+
+***CPU***
+
+Safe OC config:
+
+```
+over_voltage=6 
+arm_freq=2147
+gpu_freq=700
+```
+
+OC to 2.3Ghz(Better use a wind cooler):
+
+```
+over_voltage=8
+gpu_freq=750
+arm_freq=2275
+```
+
 
 P.S. I also tested [kernel 5.16]((https://github.com/raspberrypi/linux/tree/rpi-5.16.y) with these [files](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/tree/main/rpi_5.15%2B.y_radeon_tweak) replaced,it works too.
 
