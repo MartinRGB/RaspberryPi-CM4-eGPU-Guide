@@ -340,7 +340,6 @@ sudo cp /usr/local/lib/aarch64-linux-gnu/libXvMCr600.so /usr/lib/aarch64-linux-g
 sudo cp /usr/local/lib/aarch64-linux-gnu/libXvMCr600.so.1 /usr/lib/aarch64-linux-gnu/libXvMCr600.so.1
 sudo cp /usr/local/lib/aarch64-linux-gnu/dri/r600_drv_video.so /usr/lib/aarch64-linux-gnu/dri/r600_drv_video.so
 sudo cp /usr/local/lib/aarch64-linux-gnu/dri/r600_dri.so /usr/lib/aarch64-linux-gnu/dri/r600_dri.so
-sudo cp /usr/local/lib/aarch64-linux-gnu/dri/r600_drv_video.so /usr/lib/aarch64-linux-gnu/dri/r600_drv_video.so
 ```
 
 Chromium Setting:
