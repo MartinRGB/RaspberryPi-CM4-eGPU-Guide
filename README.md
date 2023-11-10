@@ -29,9 +29,12 @@ Image via GPUZ
 | GPU | GPU Name | Memory Size | Number of PCIE Cables required | Front| IO | Top | Test passed | Note |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: |
 | AMD Radeon HD 6870 | Barts | 1GB | x1 | ![](https://tpucdn.com/gpu-specs/images/c/256-front.small.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/256-top.jpg)  | Yes | - |
+| XFX Double D HD 6870 XXX Edition | 1GB | x1 | ![image](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/assets/7036706/3f54341b-0578-4a12-a6c9-6030aee74e25) | - | - | Yes | Better heat dissipation |
 | AMD Radeon R9 390 | Grenada | 8GB | x2 | ![](https://tpucdn.com/gpu-specs/images/c/2664-front.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-i-o.jpg)| ![](https://tpucdn.com/gpu-specs/images/c/2664-top.jpg)  | No | Memory alignment fault issue. |
 | XFX R9 290X(4GB) | Hawaii | 4GB | x2 | ![](https://tpucdn.com/gpu-specs/images/b/3118-front.jpg) | - | - | No | Memory alignment fault issue. |
 | HIS HD 7970 IceQ X2 | Tahiti | 3GB | x2 | ![](https://tpucdn.com/gpu-specs/images/b/56-front.jpg) |![](https://tpucdn.com/gpu-specs/images/b/56-i-o.jpg) | ![](https://tpucdn.com/gpu-specs/images/b/56-top.jpg)| No | Memory alignment fault issue. |
+| XFX HD 7870 | Pitcairn | 2GB | x2 | ![]([https://tpucdn.com/gpu-specs/images/b/3118-front.jpg](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/assets/7036706/c06972ac-162f-499d-9656-e59263b326ce)) | - | - | No | Memory alignment fault issue. |
+
 
 Conclusions：I suggest getting a version of the Northern Island series 1G RAM video card.
 
@@ -70,10 +73,9 @@ Since this is a hack, it is inevitable that you will have to reinstall many time
 **CM4 IO Board**(I've tried both of the following):
   - [Compute Module 4 IO Board](https://www.raspberrypi.com/products/compute-module-4-io-board/)
     - You need n 15-Pin SATA Male to 4-Pin Floppy FDD Female like [this](https://www.amazon.co.uk/KALEA-INFORMATIQUE-Floppy-Molex-POWER-cable/dp/B07Z9H9ZLZ) to power Pi.
+    - I recommend this one because it has an external power connector and you can use an ATX power supply to power both GPU & Pi
   - [CM4-IO-BASE-A](https://www.waveshare.com/wiki/)
     
-I recommend this one because it has an external power connector and you can use an ATX power supply to power both GPU & Pi
-
 **Adapter**:
   - PCI-E 1x to PCI-E 16x riser(for Official CM4 IO Board)
   - M.2 to PCI-E 16x riser(for CM4-IO-BASE-A)
