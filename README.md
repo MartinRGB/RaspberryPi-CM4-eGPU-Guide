@@ -34,6 +34,8 @@ Image via GPUZ
 | XFX R9 290X(4GB) | Hawaii | 4GB | x2 | ![](https://tpucdn.com/gpu-specs/images/b/3118-front.jpg) | - | - | No | Memory alignment fault issue. |
 | HIS HD 7970 IceQ X2 | Tahiti | 3GB | x2 | ![](https://tpucdn.com/gpu-specs/images/b/56-front.jpg) |![](https://tpucdn.com/gpu-specs/images/b/56-i-o.jpg) | ![](https://tpucdn.com/gpu-specs/images/b/56-top.jpg)| No | Memory alignment fault issue. |
 | XFX HD 7870 | Pitcairn | 2GB | x2 | ![](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/assets/7036706/c06972ac-162f-499d-9656-e59263b326ce) | - | - | No | Memory alignment fault issue. |
+| AMD Radeon Pro WX 4100 | Baffin | 4GB | - | ![](https://github.com/MartinRGB/RaspberryPi-CM4-eGPU-Guide/assets/7036706/f4dd35a7-c36e-4ef9-a361-efb6d6f45e2a) | - | - | No | Memory alignment fault issue. |
+
 
 
 Conclusions：I suggest getting a version of the Northern Island series 1G RAM video card.
