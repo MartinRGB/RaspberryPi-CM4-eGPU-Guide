@@ -85,7 +85,7 @@ Since this is a hack, it is inevitable that you will have to reinstall many time
 **ATX PSU**：
   - Modular/Rated Power 500W+(Because I used some high-powered graphics cards)
 
-Do not use cell phone chargers or direct USB/USBC power, they are undervoltage. Please use 5V3A/5V4A power adapter
+Do not use cell phone chargers or direct USB/USBC power, they are undervoltage. Please use 5V3A/5V4A/5.1V3A power adapter
 
 **Raspberry Pi OS Image**:
   -Kernel 5.1 - [2022-01-28-raspios-bullseye-arm64-full.zip](http://downloads.raspberrypi.org/raspios_full_arm64/images/raspios_full_arm64-2022-01-28/)
