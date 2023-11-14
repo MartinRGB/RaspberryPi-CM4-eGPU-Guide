@@ -356,8 +356,6 @@ chrome：flags/#disable-accelerated-video-decoe —— Hardware-accelerated vide
 
 ## Restart & Load the driver
 
-**disconnect HDMI.**
-
 disconnect microUSB(USB slave) & jumper,reboot,run
 
 ```
