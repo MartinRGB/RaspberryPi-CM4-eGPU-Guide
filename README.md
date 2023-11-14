@@ -88,8 +88,9 @@ Since this is a hack, it is inevitable that you will have to reinstall many time
 Do not use cell phone chargers or direct USB/USBC power, they are undervoltage. Please use 5V3A/5V4A/5.1V3A power adapter
 
 **Raspberry Pi OS Image**:
-  -Kernel 5.1 - [2022-01-28-raspios-bullseye-arm64-full.zip](http://downloads.raspberrypi.org/raspios_full_arm64/images/raspios_full_arm64-2022-01-28/)
-  -Or Kernel 6.1 - newest RPI OS Img,download from [official download page](https://www.raspberrypi.com/software/operating-systems/)
+
+  - Kernel 5.1 - [2022-01-28-raspios-bullseye-arm64-full.zip](http://downloads.raspberrypi.org/raspios_full_arm64/images/raspios_full_arm64-2022-01-28/)
+  - Or Kernel 6.1 - newest RPI OS Img,download from [official download page](https://www.raspberrypi.com/software/operating-systems/)
 
 After testing, if you use the 64 bit image from 2023-05-03 (kernel version 6.1) as a base and then add the Radeon driver, the performance is better than the 2022 (kernel version 5.1) package mentioned in JeefGeerling's article
 
